@@ -37,6 +37,13 @@ export default {
         }
     },
 
+    watch: {
+        dependenciesSatisfied: function (value) {
+            console.log(this.field);
+            this.field.visible = value;
+        }
+    },
+
     methods: {
 
         // @todo: refactor entire watcher procedure, this approach isn't maintainable ..
